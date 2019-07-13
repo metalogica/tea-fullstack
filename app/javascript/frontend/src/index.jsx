@@ -8,7 +8,7 @@ import logger from 'redux-logger';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { createBrowserHistory as history } from 'history';
 import { reducer as formReducer } from 'redux-form';
-//import '../assets/stylesheets/application.scss';
+import '../assets/stylesheets/application.scss';
 
 // boilerplate internal modules
 import PostsIndex from './views/posts_index';

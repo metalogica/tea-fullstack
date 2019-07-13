@@ -17,7 +17,6 @@ class NavBar extends Component {
         <Link to='/'>Swiper</Link>
         <Link to='/chat_room'>ChatRoom</Link>
         <Link to='/user_profile'>UserProfile</Link>
-        <Link to='/match_profile'>MatchProfile</Link>
       </div>
     )
   }

@@ -36,7 +36,9 @@ class MatchProfile extends Component {
           <li>{match.age}</li>
           <li>{match.about_me}</li>
           <ul>
-            {Object. <li>{skill}</li>)}
+            {match.skills.map((skill, index) => {
+              return <li><span>{skill.icon}</span><span>{skill.name}</span></li>
+            })}
           </ul>
           <div>
             {match.images.map(url => <img src={url}/>)}
