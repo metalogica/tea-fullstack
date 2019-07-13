@@ -17,9 +17,9 @@ ActiveRecord::Schema.define(version: 2019_07_13_135454) do
 
   create_table "messages", force: :cascade do |t|
     t.boolean "unread"
-    t.integer "sender_id"
-    t.integer "recipient_id"
     t.string "content"
+    t.integer "recipient_id"
+    t.integer "sender_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

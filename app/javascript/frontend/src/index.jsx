@@ -21,6 +21,7 @@ import Login from './views/login/login.jsx';
 import MatchProfile from './views/match_profile/match_profile.jsx';
 import UserProfile from './views/user_profile/user_profile.jsx';
 import Swiper from './views/swiper/swiper.jsx';
+import PersonalConversation from './views/chatroom/personal_conversation.jsx';
 
 // Reducers
 import usersReducer from './reducers/users_reducer.js';
@@ -66,6 +67,7 @@ ReactDOM.render(
           <Route path="/swiper" exact component={Swiper} />
           <Route path="/user_profile" exact component={UserProfile} />
           <Route path="/chat_room" exact component={ChatRoom} />
+          <Route path="/chat_room/:id" exact component={PersonalConversation} />
           <Route path="/match_profile/:id" exact component={MatchProfile} />
           <Route path="/posts/:id" component={PostsShow} />
           <Redirect from='/' to='swiper'/>

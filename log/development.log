@@ -19724,3 +19724,2224 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 1.3ms)
 
 
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 16:59:44.839049"], ["updated_at", "2019-07-13 16:59:44.839049"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:44.841560"], ["updated_at", "2019-07-13 16:59:44.841560"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:44.844461"], ["updated_at", "2019-07-13 16:59:44.844461"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:44.847083"], ["updated_at", "2019-07-13 16:59:44.847083"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 16:59:54.068954"], ["updated_at", "2019-07-13 16:59:54.068954"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:54.072399"], ["updated_at", "2019-07-13 16:59:54.072399"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:54.075859"], ["updated_at", "2019-07-13 16:59:54.075859"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 16:59:54.078743"], ["updated_at", "2019-07-13 16:59:54.078743"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (147.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (208.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (480.5ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (378.0ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:05:59.907482"], ["updated_at", "2019-07-13 17:05:59.907482"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:05:59.989084"], ["updated_at", "2019-07-13 17:05:59.989084"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (12.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:05:59.993709"], ["updated_at", "2019-07-13 17:05:59.993709"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (206.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (129.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (427.7ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (752.8ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (3.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (6.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (8.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (3.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (3.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:06:17.084506"], ["updated_at", "2019-07-13 17:06:17.084506"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (4.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (41.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:06:17.281724"], ["updated_at", "2019-07-13 17:06:17.281724"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (32.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (8.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:06:17.316885"], ["updated_at", "2019-07-13 17:06:17.316885"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (189.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (202.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (389.2ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (462.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (20.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:07:12.806701"], ["updated_at", "2019-07-13 17:07:12.806701"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:07:12.891909"], ["updated_at", "2019-07-13 17:07:12.891909"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:07:12.895178"], ["updated_at", "2019-07-13 17:07:12.895178"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (3.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (237.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (253.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (475.2ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (512.0ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:09:54.572046"], ["updated_at", "2019-07-13 17:09:54.572046"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:09:54.728570"], ["updated_at", "2019-07-13 17:09:54.728570"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:09:54.735951"], ["updated_at", "2019-07-13 17:09:54.735951"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (139.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (191.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (328.3ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (368.0ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (11.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_273a25a7a6"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_messages_on_user_id" ON "messages"  ("user_id")[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:11:16.750730"], ["updated_at", "2019-07-13 17:11:16.750730"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:11:16.889291"], ["updated_at", "2019-07-13 17:11:16.889291"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:11:16.892587"], ["updated_at", "2019-07-13 17:11:16.892587"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (141.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (201.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (411.1ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (487.8ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (23.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:13:33.629517"], ["updated_at", "2019-07-13 17:13:33.629517"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (205.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (198.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (358.8ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (430.5ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (11.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (9.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:14:37.211889"], ["updated_at", "2019-07-13 17:14:37.211889"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (132.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (197.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (414.9ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (362.9ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:14:42.593355"], ["updated_at", "2019-07-13 17:14:42.593355"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:14:42.914302"], ["updated_at", "2019-07-13 17:14:42.914302"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:14:42.918427"], ["updated_at", "2019-07-13 17:14:42.918427"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (237.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (288.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (526.8ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (432.1ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:16:47.020919"], ["updated_at", "2019-07-13 17:16:47.020919"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("id", "first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["id", 1], ["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:16:47.117251"], ["updated_at", "2019-07-13 17:16:47.117251"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:16:47.128138"], ["updated_at", "2019-07-13 17:16:47.128138"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (206.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (204.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (340.4ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (422.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (14.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:17:23.608153"], ["updated_at", "2019-07-13 17:17:23.608153"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:17:23.814894"], ["updated_at", "2019-07-13 17:17:23.814894"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:17:23.823477"], ["updated_at", "2019-07-13 17:17:23.823477"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:17:23.829007"], ["updated_at", "2019-07-13 17:17:23.829007"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (339.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (357.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (421.6ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (400.8ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (17.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (5.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (5.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:18:54.886999"], ["updated_at", "2019-07-13 17:18:54.886999"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:18:55.020912"], ["updated_at", "2019-07-13 17:18:55.020912"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:18:55.025233"], ["updated_at", "2019-07-13 17:18:55.025233"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:18:55.035046"], ["updated_at", "2019-07-13 17:18:55.035046"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:18:55.046303"], ["updated_at", "2019-07-13 17:18:55.046303"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (203.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (195.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (413.1ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (419.7ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:21:05.985480"], ["updated_at", "2019-07-13 17:21:05.985480"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:21:06.166661"], ["updated_at", "2019-07-13 17:21:06.166661"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:06.174541"], ["updated_at", "2019-07-13 17:21:06.174541"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:06.191624"], ["updated_at", "2019-07-13 17:21:06.191624"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:06.196003"], ["updated_at", "2019-07-13 17:21:06.196003"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (145.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (136.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (405.2ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (448.5ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:21:32.523953"], ["updated_at", "2019-07-13 17:21:32.523953"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (11.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (1.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:21:32.717206"], ["updated_at", "2019-07-13 17:21:32.717206"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:32.722612"], ["updated_at", "2019-07-13 17:21:32.722612"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:32.728256"], ["updated_at", "2019-07-13 17:21:32.728256"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:21:32.731481"], ["updated_at", "2019-07-13 17:21:32.731481"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (136.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (171.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (422.9ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (406.6ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (18.8ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (3.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:22:09.011200"], ["updated_at", "2019-07-13 17:22:09.011200"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (1.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:22:09.128112"], ["updated_at", "2019-07-13 17:22:09.128112"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (5.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:22:09.132436"], ["updated_at", "2019-07-13 17:22:09.132436"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:22:09.143046"], ["updated_at", "2019-07-13 17:22:09.143046"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:22:09.153436"], ["updated_at", "2019-07-13 17:22:09.153436"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (143.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (140.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (362.6ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (415.2ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (11.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:24:30.446121"], ["updated_at", "2019-07-13 17:24:30.446121"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:24:30.565860"], ["updated_at", "2019-07-13 17:24:30.565860"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:24:30.569603"], ["updated_at", "2019-07-13 17:24:30.569603"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:24:30.572422"], ["updated_at", "2019-07-13 17:24:30.572422"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:24:30.575213"], ["updated_at", "2019-07-13 17:24:30.575213"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (139.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (201.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (414.2ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (413.7ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "content" character varying, "recipient_id" integer, "sender_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddNewToUser (20190713135454)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "new" boolean DEFAULT TRUE[0m
+  ↳ db/migrate/20190713135454_add_new_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713135454"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 17:26:51.733142"], ["updated_at", "2019-07-13 17:26:51.733142"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (0.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (7.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "created_at", "updated_at", "new") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["first_name", "current_user"], ["last_name", "demo"], ["created_at", "2019-07-13 17:26:51.913505"], ["updated_at", "2019-07-13 17:26:51.913505"], ["new", false]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:26:51.918762"], ["updated_at", "2019-07-13 17:26:51.918762"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:26:51.927842"], ["updated_at", "2019-07-13 17:26:51.927842"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 17:26:51.935559"], ["updated_at", "2019-07-13 17:26:51.935559"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("content", "recipient_id", "sender_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "this is a test message"], ["recipient_id", 1], ["sender_id", 2], ["created_at", "2019-07-13 17:26:51.962699"], ["updated_at", "2019-07-13 17:26:51.962699"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
