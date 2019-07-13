@@ -10,12 +10,14 @@ import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
 import { fetchAllUsers } from '../../actions/index.js';
-// HTML
-import TestComponent from './TestComponent.jsx';
 
 class Swiper extends Component {
   constructor(props) {
     super(props)
+  }
+
+  state = {
+    users: this.props.users
   }
 
   componentDidMount() {
@@ -26,16 +28,16 @@ class Swiper extends Component {
     return _.map(this.props.users, (user) => {
       return(
       <div className="match-container">
-        <Link to={`/match_profile/${user.id-1}`} key={user.id}>
-          <div className='userpic'>
+        <h3>{user.first_name}</h3>
+        <div className="image-container">
+          <Link to={`/match_profile/${user.id-1}`} key={user.id}>
             {user.images.map((url,index) => <img src={url} alt=""/>)}
-          </div>
-          <div className="user-item">
-            <h3>{user.first_name}</h3>
-            <p>{user.last_name}</p>
-          </div>
-          <p>Click Me To See More</p>
-        </Link>
+          </Link>
+        </div>
+        <div className="about-container">
+          <p>{user.last_name}</p>
+          <p>{user.age} years old</p>
+        </div>
       </div>
       )
     })
@@ -49,6 +51,11 @@ class Swiper extends Component {
     return(
       <div className='swiper'>
         <NavBar/>
+        <div className='buttons'>
+          <button onClick={() => {console.log(this.state.users)}}>Don't Match</button>
+          <button>More Info</button>
+          <button>Match</button>
+        </div>
         {this.renderUsers()}
       </div>
     )

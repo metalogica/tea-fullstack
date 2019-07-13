@@ -1,17 +1,21 @@
 .swiper {
-  border: 10px solid red;
   height: 100%;
   width: 100%;
   overflow: scroll;
 
+  .buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .match-container {
-    border: 10px solid green;
     width: 100%;
     height: 100%;
   }
 
-  .userpic {
-    border: 10px solid black;
+  .image-container {
     width: 100%;
     height: 320px;
     display: flex;
@@ -23,5 +27,8 @@
       height: 300px;
       object-fit: cover;
     }
+  }
+
+  .about-container {
   }
 }
