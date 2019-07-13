@@ -32,14 +32,14 @@ class Swiper extends Component {
       <div className="match-container">
         <h3>{user.first_name}</h3>
         <div className="image-container">
-          <Link to={`/match_profile/${user.id-1}`} key={user.id}>
-            {user.images.map((url,index) => <img key={index+1} src={url} alt=""/>)}
+          <Link to={`/match_profile/${user.id}`} key={user.id}>
+            {user.images.map((url,index) => <img key={index} src={url} alt=""/>)}
           </Link>
         </div>
 
         <div className='buttons'>
           <button onClick={() => {this.declineMatch(user.id)}}>Don't Match</button>
-          <Link to={`match_profile/${user.id}`}>More Info</Link>
+          <Link to={`/match_profile/${user.id}`} key={user.id} user={user}>More Info</Link>
           <button onClick={()=> {this.acceptMatch(user.id)}}>Match</button>
         </div>
 

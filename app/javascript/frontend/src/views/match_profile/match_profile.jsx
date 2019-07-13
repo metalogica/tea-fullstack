@@ -9,39 +9,33 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
-// import { fetchAllUsers } from '../../actions/index.js';;
+import { fetchAllUsers } from '../../actions/index.js';
 
 class MatchProfile extends Component {
   constructor(props) {
     super(props)
   }
 
-  renderCurrentMatch() {
-    return(
-      TEMP
-    )
-  }
-
   render() {
-    const { match } = this.props;
-
+    let match = JSON.parse(root.dataset.users).filter(user => user.id == this.props.location.pathname.split('/').slice(-1))
+    let user = match[0]
     return(
       <div className="matchprofile">
         <NavBar/>
         <Link to="/">Back</Link>
         <h1>Match profile page</h1>
         <ul>
-          <li>{match.first_name}</li>
-          <li>{match.last_name}</li>
-          <li>{match.age}</li>
-          <li>{match.about_me}</li>
+          <li>{user.first_name}</li>
+          <li>{user.last_name}</li>
+          <li>{user.age}</li>
+          <li>{user.about_me}</li>
           <ul>
-            {match.skills.map((skill, index) => {
+            {user.skills.map((skill, index) => {
               return <li><span>{skill.icon}</span><span>{skill.name}</span></li>
             })}
           </ul>
           <div>
-            {match.images.map(url => <img src={url}/>)}
+            {user.images.map(url => <img src={url}/>)}
           </div>
         </ul>
       </div>
