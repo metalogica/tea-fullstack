@@ -17,7 +17,8 @@ class Swiper extends Component {
   }
 
   state = {
-    users: this.props.users
+    users: this.props.users,
+    currentMatchId: 0
   }
 
   componentDidMount() {
@@ -25,37 +26,64 @@ class Swiper extends Component {
   }
 
   renderUsers() {
-    return _.map(this.props.users, (user) => {
-      return(
+    return _.map(this.props.users, (user, index) => {
+      if (user.new === true && this.props.users.indexOf(user) === this.state.currentMatchId) {
+      return (
       <div className="match-container">
         <h3>{user.first_name}</h3>
         <div className="image-container">
           <Link to={`/match_profile/${user.id-1}`} key={user.id}>
-            {user.images.map((url,index) => <img src={url} alt=""/>)}
+            {user.images.map((url,index) => <img key={index+1} src={url} alt=""/>)}
           </Link>
         </div>
+
+        <div className='buttons'>
+          <button onClick={() => {this.declineMatch(user.id)}}>Don't Match</button>
+          <Link to={`match_profile/${user.id}`}>More Info</Link>
+          <button onClick={()=> {this.acceptMatch(user.id)}}>Match</button>
+        </div>
+
         <div className="about-container">
+          <p id="bio"> {user.first_name}</p>
           <p>{user.last_name}</p>
           <p>{user.age} years old</p>
         </div>
       </div>
-      )
+      )}
     })
   }
 
-  toggleMatch() {
+  declineMatch = (user_id) => {
+    this.setState({currentMatchId: this.state.currentMatchId + 1})
+    this.markUserAsSeen(user_id, false)
+  }
 
+  acceptMatch = (user_id) => {
+    this.setState({currentMatchId: this.state.currentMatchId + 1})
+    this.markUserAsSeen(user_id, true)
+  }
+
+  markUserAsSeen = (user_id, accepted) => {
+    const csrf = document.querySelector("meta[name=csrf-token]").getAttribute("content");
+    const endpoint = `http://0.0.0.0:3000/api/v1/frontend/mark_user_as_seen`;
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'X-CSRF-Token': csrf
+      },
+      'body': JSON.stringify({
+        user_id: user_id,
+        accepted: accepted
+      })
+    })
   }
 
   render() {
     return(
       <div className='swiper'>
         <NavBar/>
-        <div className='buttons'>
-          <button onClick={() => {console.log(this.state.users)}}>Don't Match</button>
-          <button>More Info</button>
-          <button>Match</button>
-        </div>
         {this.renderUsers()}
       </div>
     )

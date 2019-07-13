@@ -17,6 +17,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :posts, only: [ :index, :show, :create]
       get 'frontend/fetch_all_users', to: 'frontend#fetch_all_users'
+      post 'frontend/mark_user_as_seen', to: 'frontend#mark_user_as_seen'
     end
   end
 
