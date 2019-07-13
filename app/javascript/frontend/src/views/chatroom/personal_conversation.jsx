@@ -1,6 +1,8 @@
 // Core React and style
 import React, { Component } from 'react';
 import './style.scss';
+//Components
+import Message from './message.jsx';
 // Redux
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -14,7 +16,7 @@ class PersonalConversation extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchAllUsers()
+    // this.props.fetchAllUsers()
   }
 
   render() {
@@ -22,6 +24,13 @@ class PersonalConversation extends Component {
       <div>
         <p>MESSAGES</p>
         <Link to="/chat_room">Back</Link>
+        {this.props.conversations.map((message, index) => {
+          return(
+          <Message key={index+1}
+                   messages={JSON.parse(root.dataset.conversations)}
+                   userId={this.props.location.pathname.split('/').slice(-1)[0]}/>
+          )
+        })}
       </div>
     )
   }

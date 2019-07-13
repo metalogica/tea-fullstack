@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import './style.scss';
 // Redux
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { createBrowserHistory as history } from 'history';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
@@ -19,11 +21,17 @@ class Message extends Component {
 
   render() {
     return(
-      <div>
+      <div className="message-container">
         <p>MESSAGES</p>
         <Link to="/chat_room">Back</Link>
-        { this.props.conversations.map( (message, index) => {
-          return <Message key={index+1}message={message}/>
+        { this.props.messages.map( (message, index) => {
+          if (message.sender_id == this.props.userId) {
+            return (
+              <div key={index+1}>{message.content}</div>
+            )
+          } else {
+            return <p>No Messages</p>
+          }
         })}
       </div>
     )
