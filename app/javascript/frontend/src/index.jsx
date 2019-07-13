@@ -54,7 +54,7 @@ const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise))
 ReactDOM.render(
   <Provider store={createStore(reducers, initialState, middlewares)}>
     <Router history={history}>
-      <div className="thin-container">
+      <div className="global-container">
         <Switch>
           <Route path="/posts" exact component={PostsIndex} />
           <Route path="/posts/new" exact component={PostsNew} />

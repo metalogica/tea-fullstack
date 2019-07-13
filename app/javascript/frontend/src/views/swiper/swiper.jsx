@@ -18,18 +18,6 @@ class Swiper extends Component {
     super(props)
   }
 
-  // Not needed, just for reference
-  // fetchAllUsers = () => {
-  //   const endpoint = 'http://0.0.0.0:3000/api/v1/frontend/fetch_all_users';
-  //   fetch(endpoint, {
-  //     method: 'GET',
-  //   })
-  //   .then(response => response.json())
-  //   .then(data => {
-  //     this.setState({users: data}, () => {console.log(this.state)})
-  //   })
-  // }
-
   componentDidMount() {
     this.props.fetchAllUsers();
   }
@@ -37,6 +25,7 @@ class Swiper extends Component {
   renderUsers() {
     return _.map(this.props.users, (user) => {
       return(
+      <div className="match-container">
         <Link to={`/match_profile/${user.id-1}`} key={user.id}>
           <div className='userpic'>
             {user.images.map((url,index) => <img src={url} alt=""/>)}
@@ -47,8 +36,13 @@ class Swiper extends Component {
           </div>
           <p>Click Me To See More</p>
         </Link>
+      </div>
       )
     })
+  }
+
+  toggleMatch() {
+
   }
 
   render() {
