@@ -11,6 +11,8 @@ export default function (state={}, action) {
       return action.payload;
     case GET_CURRENT_USER:
       return action.payload;
+    // case TOGGLE_MATCH:
+    //   return action.payload
     default:
       return state;
   }

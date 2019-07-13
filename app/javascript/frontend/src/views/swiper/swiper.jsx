@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
-import { fetchAllUsers } from '../../actions/index.js';
+import { fetchAllUsers, toggleMatch } from '../../actions/index.js';
 
 class Swiper extends Component {
   constructor(props) {
@@ -56,11 +56,15 @@ class Swiper extends Component {
   declineMatch = (user_id) => {
     this.setState({currentMatchId: this.state.currentMatchId + 1})
     this.markUserAsSeen(user_id, false)
+    // this.props.toggleMatch(user_id, false)
+    // .then(this.props.history.push('/swiper'))
   }
 
   acceptMatch = (user_id) => {
     this.setState({currentMatchId: this.state.currentMatchId + 1})
     this.markUserAsSeen(user_id, true)
+    // this.props.toggleMatch(user_id, true)
+    // .then(this.props.history.push('/swiper'))
   }
 
   markUserAsSeen = (user_id, accepted) => {
@@ -98,7 +102,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchAllUsers }, dispatch);
+  return bindActionCreators({ fetchAllUsers, toggleMatch }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Swiper);

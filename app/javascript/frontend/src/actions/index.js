@@ -11,6 +11,28 @@ export function fetchAllUsers() {
   };
 }
 
+export function toggleMatch(user_id, accepted) {
+  const csrf = document.querySelector("meta[name=csrf-token]").getAttribute("content");
+  const promise = fetch(endpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'X-CSRF-Token': csrf
+      },
+      'body': JSON.stringify({
+        user_id: user_id,
+        accepted: accepted
+      })
+    })
+  .then(response => response.json())
+
+  return {
+    type: TOGGLE_MATCH,
+    payload: promise
+  };
+}
+
 
 
 
