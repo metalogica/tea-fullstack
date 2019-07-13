@@ -60,11 +60,11 @@ ReactDOM.render(
     <Router history={history}>
       <div className="global-container">
         <Switch>
+          <Route path="/swiper" exact component={Swiper} />
           <Route path="/posts" exact component={PostsIndex} />
           <Route path="/posts/new" exact component={PostsNew} />
           <Route path="/posts/chatroom" exact component={ChatRoom} />
           <Route path="/posts/login" exact component={Login} />
-          <Route path="/swiper" exact component={Swiper} />
           <Route path="/user_profile" exact component={UserProfile} />
           <Route path="/chat_room" exact component={ChatRoom} />
           <Route path="/chat_room/:id" exact component={PersonalConversation} />

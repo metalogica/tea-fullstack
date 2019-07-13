@@ -21945,3 +21945,25 @@ Migrating to AddNewToUser (20190713135454)
   ↳ db/seeds.rb:22
   [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:22
+Started GET "/swiper" for 127.0.0.1 at 2019-07-13 13:54:43 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/richardjarram/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:2
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."matched" = $1[0m  [["matched", true]]
+  ↳ app/views/pages/home.html.erb:4
+  Rendered pages/home.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 1613ms (Views: 1596.7ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 13:54:45 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (33.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:5
+Completed 200 OK in 43ms (Views: 6.8ms | ActiveRecord: 33.1ms)
+
+
