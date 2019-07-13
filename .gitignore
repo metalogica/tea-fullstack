@@ -1,2 +1,2 @@
 .env*
-tmp/cache/webpacker/babel-loader-node-modules/
+tmp/cache/
