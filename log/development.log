@@ -10401,3 +10401,60 @@ Processing by Api::V1::FrontendController#fetch_all_users as JSON
 Completed 200 OK in 49ms (Views: 3.2ms | ActiveRecord: 45.3ms)
 
 
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 07:10:55 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user_profile" for 127.0.0.1 at 2019-07-13 07:11:06 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/user_profile" for 127.0.0.1 at 2019-07-13 07:11:07 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 07:11:17 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (37.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 41ms (Views: 3.1ms | ActiveRecord: 37.1ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 07:11:19 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 07:11:20 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 07:11:22 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (10.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 15ms (Views: 4.0ms | ActiveRecord: 10.6ms)
+
+
