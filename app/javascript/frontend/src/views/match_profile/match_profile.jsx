@@ -28,12 +28,18 @@ class MatchProfile extends Component {
     return(
       <div className="matchprofile">
         <NavBar/>
+        <Link to="/">Back</Link>
         <h1>Match profile page</h1>
         <ul>
           <li>{match.first_name}</li>
           <li>{match.last_name}</li>
+          <li>{match.age}</li>
+          <li>{match.about_me}</li>
+          <ul>
+            {Object. <li>{skill}</li>)}
+          </ul>
           <div>
-            {match.}
+            {match.images.map(url => <img src={url}/>)}
           </div>
         </ul>
       </div>

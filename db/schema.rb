@@ -46,8 +46,8 @@ ActiveRecord::Schema.define(version: 2019_07_13_102529) do
     t.string "address"
     t.string "about_me"
     t.integer "age"
-    t.json "skills"
-    t.json "interests"
+    t.json "skills", default: [], array: true
+    t.json "interests", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "matched", default: false

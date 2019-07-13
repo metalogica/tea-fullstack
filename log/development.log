@@ -8586,3 +8586,323 @@ Migrating to AddImagesToUser (20190713102529)
   ↳ db/seeds.rb:15
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:15
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:32:35 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/richardjarram/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (28.1ms)
+Started GET "/" for 127.0.0.1 at 2019-07-13 06:32:37 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (24.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 2486ms (Views: 2463.1ms | ActiveRecord: 10.3ms)
+
+
+Completed 200 OK in 1533ms (Views: 1503.5ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-13 06:33:21 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 43ms (Views: 35.9ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-07-13 06:33:22 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (82.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (96.1ms)
+Completed 200 OK in 124ms (Views: 29.1ms | ActiveRecord: 92.9ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:33:23 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:33:24 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:34:02 -0400
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:06 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:08 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (32.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 35ms (Views: 2.3ms | ActiveRecord: 32.6ms)
+
+
+Started GET "/swiper" for 127.0.0.1 at 2019-07-13 06:34:14 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (7.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 76ms (Views: 59.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:15 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:17 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/swiper" for 127.0.0.1 at 2019-07-13 06:34:39 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:40 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:45 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-13 06:34:47 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:4
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:35:43 -0400
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:35:54 -0400
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:36:06 -0400
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (3.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 84ms (Views: 73.6ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/match_profile/1" for 127.0.0.1 at 2019-07-13 06:36:53 -0400
+Processing by PagesController#home as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (17.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:1
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered pages/home.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 83ms (Views: 62.8ms | ActiveRecord: 18.1ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (212.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (202.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myapp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (411.5ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (421.5ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePosts (20190616143044)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190616143044_create_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190616143044"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190713003940)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "email" character varying, "address" character varying, "about_me" character varying, "age" integer, "skills" json[] DEFAULT '{}', "interests" json[] DEFAULT '{}', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713003940_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (13.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713003940"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePhotos (20190713005129)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "photos" ("id" bigserial primary key, "user_id" bigint, "url" character varying DEFAULT 'https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg', "filename" character varying DEFAULT 'unnamed', "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c79d76afc0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_photos_on_user_id" ON "photos"  ("user_id")[0m
+  ↳ db/migrate/20190713005129_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005129"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMessages (20190713005710)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "unread" boolean, "sender_id" integer, "recipient_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190713005710_create_messages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713005710"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddMatchedToUser (20190713090224)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "matched" boolean DEFAULT FALSE[0m
+  ↳ db/migrate/20190713090224_add_matched_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713090224"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddImagesToUser (20190713102529)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "users" ADD "images" character varying[] DEFAULT '{}'[0m
+  ↳ db/migrate/20190713102529_add_images_to_user.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190713102529"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-13 10:40:33.533408"], ["updated_at", "2019-07-13 10:40:33.533408"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (9.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Dan"], ["last_name", "Old Man"], ["email", "dan.oldman@gmail.com"], ["address", "5333 casgrain"], ["about_me", "I enjoy being a stock person"], ["age", 99], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 10:40:33.648152"], ["updated_at", "2019-07-13 10:40:33.648152"], ["images", "{https://previews.123rf.com/images/marcoprati/marcoprati1312/marcoprati131200009/24450677-portrait-of-an-old-man-with-gray-eyes.jpg}"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Bob"], ["last_name", "Bobby"], ["email", "bob@email.com"], ["address", "400 sherbrooke"], ["about_me", "Hi, I'm Bob yall"], ["age", 22], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 10:40:33.661972"], ["updated_at", "2019-07-13 10:40:33.661972"], ["images", "{https://live.staticflickr.com/72/200858281_1fbb466110_b.jpg}"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (6.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "address", "about_me", "age", "skills", "interests", "created_at", "updated_at", "images") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["first_name", "Martin"], ["last_name", "Giannakopoulos"], ["email", "martin@email.com"], ["address", "5333 casgrain"], ["about_me", "Hi, I'm a God yall"], ["age", 25], ["skills", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["interests", "{\"{\\\"icon\\\":\\\"\\\\u0026#937\\\",\\\"name\\\":\\\"Greek\\\"}\",\"{\\\"icon\\\":\\\"\\\\u0026#936\\\",\\\"name\\\":\\\"Other\\\"}\"}"], ["created_at", "2019-07-13 10:40:33.666065"], ["updated_at", "2019-07-13 10:40:33.666065"], ["images", "{https://vignette.wikia.nocookie.net/nintendo/images/b/b0/Sleep_Kirby.png/revision/latest?cb=20180131012524&path-prefix=en}"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
