@@ -37,7 +37,7 @@ class Swiper extends Component {
   renderUsers() {
     return _.map(this.props.users, (user) => {
       return(
-        <Link to={`/users/${user.id}`} key={user.id}>
+        <Link to={`/match_profile/${user.id}`} key={user.id}>
           <div className="user-item">
             <h3>{user.first_name}</h3>
             <p>{user.last_name}</p>

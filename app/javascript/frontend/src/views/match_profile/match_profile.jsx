@@ -16,20 +16,34 @@ class MatchProfile extends Component {
     super(props)
   }
 
+  renderCurrentMatch() {
+    return(
+      TEMP
+    )
+  }
+
   render() {
+    const { match } = this.props;
+
     return(
       <div className="matchprofile">
         <NavBar/>
         <h1>Match profile page</h1>
+        <ul>
+          <li>{match.first_name}</li>
+          <li>{match.last_name}</li>
+          <div>
+            {match.}
+          </div>
+        </ul>
       </div>
     )
   }
 }
 
 
-function mapStateToProps(state) {
-  return {
-  };
+function mapStateToProps(state, ownProps) {
+  return { match: state.users[ownProps.match.params.id] };
 }
 
 function mapDispatchToProps(dispatch) {

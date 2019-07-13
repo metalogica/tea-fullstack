@@ -61,9 +61,9 @@ ReactDOM.render(
           <Route path="/posts/chatroom" exact component={ChatRoom} />
           <Route path="/posts/login" exact component={Login} />
           <Route path="/swiper" exact component={Swiper} />
-          <Route path="/match_profile" exact component={MatchProfile} />
           <Route path="/user_profile" exact component={UserProfile} />
           <Route path="/chat_room" exact component={ChatRoom} />
+          <Route path="/match_profile/:id" exact component={MatchProfile} />
           <Route path="/posts/:id" component={PostsShow} />
           <Redirect from='/' to='swiper'/>
         </Switch>

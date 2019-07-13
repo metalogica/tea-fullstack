@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   # Thé App
   get "swiper", to: "pages#home"
-  get "match_profile", to: "pages#home"
+  get "match_profile/:id", to: "pages#home"
   get "user_profile", to: "pages#home"
   get "chatroom", to: "pages#home"
 
