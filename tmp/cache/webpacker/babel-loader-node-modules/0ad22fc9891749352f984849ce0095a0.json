@@ -1,0 +1,1 @@
+{"ast":null,"code":"import \"bootstrap\";","map":{"version":3,"sources":["/Users/richardjarram/code/catonmat/react-redux-challenges/05-React-in-Rails/admin-blog/app/javascript/packs/application.js"],"names":[],"mappings":"AAAA,OAAO,WAAP","sourcesContent":["import \"bootstrap\";\n"]},"metadata":{},"sourceType":"module"}
