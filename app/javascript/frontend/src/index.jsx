@@ -42,8 +42,8 @@ const initialState = {
 const reducers = combineReducers({
   posts: postsReducer,
   form: formReducer,
-  currentUser: usersReducer,
-  allUsers: usersReducer
+  allUsers: usersReducer,
+  currentUser: usersReducer
 });
 
 //Middleware

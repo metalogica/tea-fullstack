@@ -1,12 +1,12 @@
 export const FETCH_ALL_USERS = 'FETCH_ALL_USERS';
 
 export function fetchAllUsers() {
-  const promise = fetch('/api/v1/fetch_all_users')
+  const promise = fetch('/api/v1/frontend/fetch_all_users')
   .then(response => response.json());
 
   return {
     type: FETCH_ALL_USERS,
-    payload: action.payload
+    payload: promise
   };
 }
 
