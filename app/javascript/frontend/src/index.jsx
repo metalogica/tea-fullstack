@@ -22,16 +22,27 @@ import MatchProfile from './views/match_profile/match_profile.jsx';
 import UserProfile from './views/user_profile/user_profile.jsx';
 import Swiper from './views/swiper/swiper.jsx';
 //import '../assets/stylesheets/application.scss';
+
+// Temporary Database
+import { currentUser } from './data.js'
+console.log(currentUser)
+
 const root = document.querySelector('#root')
-const initialState = { posts: JSON.parse(root.dataset.posts) };
+const initialState = {
+  posts: JSON.parse(root.dataset.posts),
+  currentUser: currentUser
+};
 
 // State and reducers
 const reducers = combineReducers({
   posts: postsReducer,
-  form: formReducer
+  form: formReducer,
+  currentUser: currentUser
 });
 
-const middlewares = applyMiddleware(reduxPromise, logger);
+//Middleware
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise))
 
 // render an instance of the component in the DOM
 ReactDOM.render(

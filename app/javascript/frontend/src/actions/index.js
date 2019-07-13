@@ -1,3 +1,42 @@
+export const FETCH_ALL_USERS = 'FETCH_ALL_USERS';
+
+export function fetchAllUsers() {
+  const promise = fetch('/api/v1/fetch_all_users')
+  .then(response => response.json());
+
+  return {
+    type: FETCH_ALL_USERS,
+    payload: "TEMP"
+  };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// POSTS ACTIONS
 export const FETCH_POSTS = 'FETCH_POSTS';
 export const FETCH_POST = 'FETCH_POST';
 export const POST_CREATED = 'POST_CREATED';
