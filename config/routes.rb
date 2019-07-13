@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get "swiper", to: "pages#home"
   get "match_profile/:id", to: "pages#home"
   get "user_profile", to: "pages#home"
-  get "chatroom", to: "pages#home"
+  get "chat_room", to: "pages#home"
+  get "chat_room/:id", to: "pages#home"
 
   # API routes
   namespace :api, defaults: { format: :json } do

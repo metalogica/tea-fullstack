@@ -26,6 +26,7 @@ import Swiper from './views/swiper/swiper.jsx';
 import usersReducer from './reducers/users_reducer.js';
 import currentUserReducer from './reducers/current_user_reducer.js';
 import postsReducer from './reducers/posts_reducer';
+import conversationsReducer from './reducers/conversations_reducer';
 
 // Temporary Database
 import { currentUser } from './data.js'
@@ -35,7 +36,8 @@ const root = document.querySelector('#root')
 const initialState = {
   posts: JSON.parse(root.dataset.posts),
   users: JSON.parse(root.dataset.users),
-  currentUser: currentUser
+  currentUser: currentUser,
+  conversations: JSON.parse(root.dataset.conversations)
 };
 
 // Redux state init
@@ -43,7 +45,8 @@ const reducers = combineReducers({
   posts: postsReducer,
   form: formReducer,
   users: usersReducer,
-  currentUser: currentUserReducer
+  currentUser: currentUserReducer,
+  conversations: conversationsReducer
 });
 
 //Middleware
