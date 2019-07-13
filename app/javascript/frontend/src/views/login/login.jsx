@@ -14,10 +14,30 @@ class Login extends Component {
     super(props)
   }
 
+  state = {
+  }
+
+  fetchAllUsers = () => {
+    const endpoint = 'http://0.0.0.0:3000/api/v1/frontend/fetch_all_users';
+    fetch(endpoint, {
+      method: 'GET',
+    })
+    .then(response => response.json())
+    .then(data => {
+      this.setState({users: data}, () => {console.log(this.state)})
+    })
+  }
+
+  componentWillMount() {
+    this.fetchAllUsers()
+  }
+
   render() {
     return(
       <div>
         <p>Login Containers</p>
+        <button onClick={this.fetchAllUsers}>Log API Call</button>
+        <button onClick={() => {console.log(this.state)}}>Log state</button>
       </div>
     )
   }

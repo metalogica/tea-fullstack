@@ -6,7 +6,7 @@ export function fetchAllUsers() {
 
   return {
     type: FETCH_ALL_USERS,
-    payload: "TEMP"
+    payload: action.payload
   };
 }
 
