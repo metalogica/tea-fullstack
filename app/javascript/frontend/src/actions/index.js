@@ -1,4 +1,5 @@
 export const FETCH_ALL_USERS = 'FETCH_ALL_USERS';
+export const GET_CURRENT_USER = 'GET_CURRENT_USER';
 
 export function fetchAllUsers() {
   const promise = fetch('/api/v1/frontend/fetch_all_users')
@@ -9,32 +10,6 @@ export function fetchAllUsers() {
     payload: promise
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // POSTS ACTIONS
 export const FETCH_POSTS = 'FETCH_POSTS';

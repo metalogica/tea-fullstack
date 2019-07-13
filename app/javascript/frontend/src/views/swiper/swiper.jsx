@@ -1,6 +1,8 @@
 // Core React and style
 import React, { Component } from 'react';
 import './style.scss';
+//Components
+import NavBar from '../../components/navbar/navbar.jsx';
 // Redux
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -16,27 +18,40 @@ class Swiper extends Component {
     super(props)
   }
 
-  fetchAllUsers = () => {
-    const endpoint = 'http://0.0.0.0:3000/api/v1/frontend/fetch_all_users';
-    fetch(endpoint, {
-      method: 'GET',
-    })
-    .then(response => response.json())
-    .then(data => {
-      this.setState({users: data}, () => {console.log(this.state)})
-    })
-  }
+  // Not needed, just for reference
+  // fetchAllUsers = () => {
+  //   const endpoint = 'http://0.0.0.0:3000/api/v1/frontend/fetch_all_users';
+  //   fetch(endpoint, {
+  //     method: 'GET',
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     this.setState({users: data}, () => {console.log(this.state)})
+  //   })
+  // }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchAllUsers();
   }
 
-  render() {
-    console.log('state', this.props.allUsers)
+  renderUsers() {
+    return _.map(this.props.users, (user) => {
+      return(
+        <Link to={`/users/${user.id}`} key={user.id}>
+          <div className="user-item">
+            <h3>{user.first_name}</h3>
+            <p>{user.last_name}</p>
+          </div>
+        </Link>
+      )
+    })
+  }
 
+  render() {
     return(
       <div>
-        <TestComponent/>
+        <NavBar/>
+        {this.renderUsers()}
       </div>
     )
   }
@@ -44,8 +59,8 @@ class Swiper extends Component {
 
 function mapStateToProps(state) {
   return {
-    currentUser: state.currentUser,
-    allUsers: state.allUsers
+    users: state.users,
+    currentUser: state.currentUser
   };
 }
 

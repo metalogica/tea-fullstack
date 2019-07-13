@@ -1,8 +1,39 @@
-import React from 'react';
+// Core React and style
+import React, { Component } from 'react';
 import './style.scss';
+//Components
+import NavBar from '../../components/navbar/navbar.jsx';
+// Redux
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
+import _ from 'lodash';
+// Actions
+// import { fetchAllUsers } from '../../actions/index.js';;
 
-const ChatRoom = (props) => {
-  return <p>Chat room container</p>
+class ChatRoom extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return(
+      <div className="chatroom">
+        <NavBar/>
+        <h1>Chatroom</h1>
+      </div>
+    )
+  }
 }
 
-export default ChatRoom;
+
+function mapStateToProps(state) {
+  return {
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ChatRoom);

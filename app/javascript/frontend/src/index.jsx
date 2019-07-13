@@ -8,6 +8,7 @@ import logger from 'redux-logger';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { createBrowserHistory as history } from 'history';
 import { reducer as formReducer } from 'redux-form';
+//import '../assets/stylesheets/application.scss';
 
 // boilerplate internal modules
 import PostsIndex from './views/posts_index';
@@ -20,30 +21,29 @@ import Login from './views/login/login.jsx';
 import MatchProfile from './views/match_profile/match_profile.jsx';
 import UserProfile from './views/user_profile/user_profile.jsx';
 import Swiper from './views/swiper/swiper.jsx';
-//import '../assets/stylesheets/application.scss';
 
 // Reducers
 import usersReducer from './reducers/users_reducer.js';
+import currentUserReducer from './reducers/current_user_reducer.js';
 import postsReducer from './reducers/posts_reducer';
 
 // Temporary Database
 import { currentUser } from './data.js'
-console.log(currentUser)
+console.log('Current User', currentUser)
 
 const root = document.querySelector('#root')
 const initialState = {
   posts: JSON.parse(root.dataset.posts),
-  currentUser: currentUser,
-  unmatchedUsers: undefined,
-  matchedUsers: undefined
+  users: JSON.parse(root.dataset.users),
+  currentUser: currentUser
 };
 
 // Redux state init
 const reducers = combineReducers({
   posts: postsReducer,
   form: formReducer,
-  allUsers: usersReducer,
-  currentUser: usersReducer
+  users: usersReducer,
+  currentUser: currentUserReducer
 });
 
 //Middleware
@@ -58,13 +58,14 @@ ReactDOM.render(
         <Switch>
           <Route path="/posts" exact component={PostsIndex} />
           <Route path="/posts/new" exact component={PostsNew} />
-          <Route path="/posts/chatroom" component={ChatRoom} />
-          <Route path="/posts/login" component={Login} />
-          <Route path="/posts/swiper" component={Swiper} />
-          <Route path="/posts/match_profile" component={MatchProfile} />
-          <Route path="/posts/user_profile" component={UserProfile} />
+          <Route path="/posts/chatroom" exact component={ChatRoom} />
+          <Route path="/posts/login" exact component={Login} />
+          <Route path="/swiper" exact component={Swiper} />
+          <Route path="/match_profile" exact component={MatchProfile} />
+          <Route path="/user_profile" exact component={UserProfile} />
+          <Route path="/chat_room" exact component={ChatRoom} />
           <Route path="/posts/:id" component={PostsShow} />
-          <Redirect from='/' to='posts'/>
+          <Redirect from='/' to='swiper'/>
         </Switch>
       </div>
     </Router>

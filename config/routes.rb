@@ -1,16 +1,23 @@
 Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'pages#home'
+  # Boilerplate
   get "posts", to: "pages#home"
   get "posts/new", to: "pages#home"
   get "posts/:id", to: "pages#home"
-  get "posts/chatroom", to: "pages#home"
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Thé App
+  get "swiper", to: "pages#home"
+  get "match_profile", to: "pages#home"
+  get "user_profile", to: "pages#home"
+  get "chatroom", to: "pages#home"
 
   # API routes
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :posts, only: [ :index, :show, :create]
+      get 'frontend/fetch_all_users', to: 'frontend#fetch_all_users'
     end
   end
-  get 'api/v1/frontend/fetch_all_users', to: 'frontend#fetch_all_users'
+
 end
