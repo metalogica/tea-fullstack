@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_16_143044) do
+ActiveRecord::Schema.define(version: 2019_07_13_005710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "messages", force: :cascade do |t|
+    t.boolean "unread"
+    t.integer "sender_id"
+    t.integer "recipient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "url", default: "https://cdn1.medicalnewstoday.com/content/images/articles/324/324771/close-up-of-a-cup-of-tea.jpg"
+    t.string "filename", default: "unnamed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_photos_on_user_id"
+  end
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -22,4 +39,18 @@ ActiveRecord::Schema.define(version: 2019_06_16_143044) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "address"
+    t.string "about_me"
+    t.integer "age"
+    t.json "skills"
+    t.json "interests"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "photos", "users"
 end

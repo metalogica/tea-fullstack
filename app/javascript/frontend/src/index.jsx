@@ -1,4 +1,4 @@
-// external modules
+// Core react
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -9,29 +9,46 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { createBrowserHistory as history } from 'history';
 import { reducer as formReducer } from 'redux-form';
 
-// internal modules
-import postsReducer from './reducers/posts_reducer';
+// boilerplate internal modules
 import PostsIndex from './views/posts_index';
 import PostsShow from './views/posts_show';
 import PostsNew from './views/posts_new';
 
-// new modules
+// Containers
 import ChatRoom from './views/chatroom/chatroom.jsx';
 import Login from './views/login/login.jsx';
 import MatchProfile from './views/match_profile/match_profile.jsx';
 import UserProfile from './views/user_profile/user_profile.jsx';
 import Swiper from './views/swiper/swiper.jsx';
 //import '../assets/stylesheets/application.scss';
-const root = document.querySelector('#root')
-const initialState = { posts: JSON.parse(root.dataset.posts) };
 
-// State and reducers
+// Reducers
+import usersReducer from './reducers/users_reducer.js';
+import postsReducer from './reducers/posts_reducer';
+
+// Temporary Database
+import { currentUser } from './data.js'
+console.log(currentUser)
+
+const root = document.querySelector('#root')
+const initialState = {
+  posts: JSON.parse(root.dataset.posts),
+  currentUser: currentUser,
+  unmatchedUsers: undefined,
+  matchedUsers: undefined
+};
+
+// Redux state init
 const reducers = combineReducers({
   posts: postsReducer,
-  form: formReducer
+  form: formReducer,
+  currentUser: usersReducer,
+  allUsers: usersReducer
 });
 
-const middlewares = applyMiddleware(reduxPromise, logger);
+//Middleware
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middlewares = composeEnhancers(applyMiddleware(logger, reduxPromise))
 
 // render an instance of the component in the DOM
 ReactDOM.render(

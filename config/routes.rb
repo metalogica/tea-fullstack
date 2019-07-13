@@ -12,4 +12,5 @@ Rails.application.routes.draw do
       resources :posts, only: [ :index, :show, :create]
     end
   end
+  get 'api/v1/frontend/fetch_all_users', to: 'frontend#fetch_all_users'
 end
