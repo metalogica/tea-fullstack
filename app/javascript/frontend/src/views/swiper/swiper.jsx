@@ -34,7 +34,7 @@ class Swiper extends Component {
       <div className="match-container">
         <div className="profile-img">
           <Link to={`/match_profile/${user.id}`} key={user.id}>
-            {user.images.map((url,index) => <img key={index} src={url} alt=""/>)}
+            {user.images.map((url,index) => <img key={index} className="avatar-pic" src={url} alt=""/>)}
           </Link>
           <h1>{user.first_name}</h1>
           <p>{user.last_name}</p>
@@ -46,22 +46,23 @@ class Swiper extends Component {
           <div className="skills">
             <i>Skills I offer to teach</i>
             <ul>
-              <li>Tooling</li>
-              <li>Gardening</li>
-              <li>Carpentry</li>
+              {user.skills.map(skill => <li>{skill}</li>)}
+            </ul>
+          </div>
+          <div className="competencies">
+            <i>I am interested in learning</i>
+            <ul>
+              {user.interests.map(interest => <li>{interest}</li>)}
             </ul>
           </div>
         </div>
 
-
-        <div className='buttons'>
-          <button onClick={() => {this.declineMatch(user.id)}}>Don't Match</button>
+        <div className='footer'>
+          <i className="fas fa-times" onClick={() => {this.declineMatch(user.id)}}></i>
           <Link to={`/match_profile/${user.id}`} key={user.id} user={user}>More Info</Link>
-          <button onClick={()=> {this.acceptMatch(user.id)}}>Match</button>
+          <i className="fas fa-check" onClick={()=> {this.acceptMatch(user.id)}}></i>
         </div>
 
-        <div className="about-container">
-        </div>
       </div>
       )}
     })
@@ -96,6 +97,10 @@ class Swiper extends Component {
         accepted: accepted
       })
     })
+  }
+
+  resetUsers() {
+    // Build API call to reset all users.
   }
 
   render() {
