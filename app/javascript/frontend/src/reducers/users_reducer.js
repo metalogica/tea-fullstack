@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { FETCH_ALL_USERS, GET_CURRENT_USER } from '../actions';
+import { FETCH_ALL_USERS, GET_CURRENT_USER, RESET_ALL_USERS } from '../actions';
 
 export default function (state={}, action) {
   if (state === undefined) {
@@ -13,6 +13,8 @@ export default function (state={}, action) {
       return action.payload;
     // case TOGGLE_MATCH:
     //   return action.payload
+    case RESET_ALL_USERS:
+      return action.payload
     default:
       return state;
   }
