@@ -32,12 +32,27 @@ class Swiper extends Component {
       if (user.new === true && this.props.users.indexOf(user) === this.state.currentMatchId) {
       return (
       <div className="match-container">
-        <h3>{user.first_name}</h3>
-        <div className="image-container">
+        <div className="profile-img">
           <Link to={`/match_profile/${user.id}`} key={user.id}>
             {user.images.map((url,index) => <img key={index} src={url} alt=""/>)}
           </Link>
+          <h1>{user.first_name}</h1>
+          <p>{user.last_name}</p>
+          <p>{user.age} years old</p>
+          <i>1.7km far away</i>
         </div>
+
+        <div className="dropdowns">
+          <div className="skills">
+            <i>Skills I offer to teach</i>
+            <ul>
+              <li>Tooling</li>
+              <li>Gardening</li>
+              <li>Carpentry</li>
+            </ul>
+          </div>
+        </div>
+
 
         <div className='buttons'>
           <button onClick={() => {this.declineMatch(user.id)}}>Don't Match</button>
@@ -46,9 +61,6 @@ class Swiper extends Component {
         </div>
 
         <div className="about-container">
-          <p id="bio"> {user.first_name}</p>
-          <p>{user.last_name}</p>
-          <p>{user.age} years old</p>
         </div>
       </div>
       )}
@@ -91,7 +103,6 @@ class Swiper extends Component {
       <div className='swiper'>
         <NavBar/>
         {this.renderUsers()}
-        <Container/>
       </div>
     )
   }
