@@ -1,4 +1,4 @@
-// Core React and style
+ // Core React and style
 import React, { Component } from 'react';
 import './style.scss';
 //Components
