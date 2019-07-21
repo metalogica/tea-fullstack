@@ -1,4 +1,4 @@
 .env*
-tmp/cache/
-tmp
-packs
+/tmp/*
+/tmp/cache/*
+/packs/*
