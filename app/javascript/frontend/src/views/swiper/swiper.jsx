@@ -10,6 +10,8 @@ import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
 import { fetchAllUsers, toggleMatch } from '../../actions/index.js';
+// HTML
+import Container from './container.jsx';
 
 class Swiper extends Component {
   constructor(props) {
@@ -89,6 +91,7 @@ class Swiper extends Component {
       <div className='swiper'>
         <NavBar/>
         {this.renderUsers()}
+        <Container/>
       </div>
     )
   }
