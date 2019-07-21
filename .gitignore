@@ -2,3 +2,4 @@
 /tmp/*
 /tmp/cache/*
 /packs/*
+yarn.lock
