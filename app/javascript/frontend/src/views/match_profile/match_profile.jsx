@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
 import { fetchAllUsers } from '../../actions/index.js';
+import Container from "./container.jsx";
 
 class MatchProfile extends Component {
   constructor(props) {
@@ -21,23 +22,7 @@ class MatchProfile extends Component {
     let user = match[0]
     return(
       <div className="matchprofile">
-        <NavBar/>
-        <Link to="/">Back</Link>
-        <h1>Match profile page</h1>
-        <ul>
-          <li>{user.first_name}</li>
-          <li>{user.last_name}</li>
-          <li>{user.age}</li>
-          <li>{user.about_me}</li>
-          <ul>
-            {user.skills.map((skill, index) => {
-              return <li><span>{skill.icon}</span><span>{skill.name}</span></li>
-            })}
-          </ul>
-          <div>
-            {user.images.map(url => <img src={url}/>)}
-          </div>
-        </ul>
+        <Container />
       </div>
     )
   }
