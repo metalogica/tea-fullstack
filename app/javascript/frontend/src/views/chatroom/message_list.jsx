@@ -23,6 +23,7 @@ class MessageList extends Component {
         this.props.matchedUsers.map((user,index) => {
           return(
             <div className="message-list" key={index+1}>
+              <p>{user.first_name} {user.last_name}</p>
               <p>Info on the person like their image</p>
               <p>{user.about_me}</p>
               <Link to={`/chat_room/${user.id}`}>ChatRoom</Link>

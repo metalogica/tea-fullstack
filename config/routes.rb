@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   # Thé App
   get "swiper", to: "pages#home"
+  get "match_profile", to: "pages#home"
   get "match_profile/:id", to: "pages#home"
   get "user_profile", to: "pages#home"
   get "chat_room", to: "pages#home"
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :posts, only: [ :index, :show, :create]
       get 'frontend/fetch_all_users', to: 'frontend#fetch_all_users'
+      get 'frontend/reset_all_users', to: 'frontend#reset_all_users'
       post 'frontend/mark_user_as_seen', to: 'frontend#mark_user_as_seen'
     end
   end

@@ -1,5 +1,6 @@
 export const FETCH_ALL_USERS = 'FETCH_ALL_USERS';
 export const GET_CURRENT_USER = 'GET_CURRENT_USER';
+export const RESET_ALL_USERS = 'RESET_ALL_USERS';
 
 export function fetchAllUsers() {
   const promise = fetch('/api/v1/frontend/fetch_all_users')
@@ -9,6 +10,16 @@ export function fetchAllUsers() {
     type: FETCH_ALL_USERS,
     payload: promise
   };
+}
+
+export function resetAllUsers() {
+  const promise = fetch('/api/v1/frontend/reset_all_users')
+  .then(response => response.json());
+
+  return {
+    type: RESET_ALL_USERS,
+    payload: promise
+  }
 }
 
 export function toggleMatch(user_id, accepted) {

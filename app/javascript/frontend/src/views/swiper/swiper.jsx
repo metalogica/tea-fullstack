@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 import _ from 'lodash';
 // Actions
-import { fetchAllUsers, toggleMatch } from '../../actions/index.js';
+import { fetchAllUsers, toggleMatch, resetAllUsers } from '../../actions/index.js';
 // HTML
 import Container from './container.jsx';
 
@@ -68,6 +68,13 @@ class Swiper extends Component {
     })
   }
 
+  resetUsers = () => {
+    this.props.resetAllUsers;
+    this.setState({currentMatchId: this.state.users[1].id}, () => {
+      console.log('clicked', this.state.currentMatchId, this.state.users)
+    });
+  }
+
   declineMatch = (user_id) => {
     this.setState({currentMatchId: this.state.currentMatchId + 1})
     this.markUserAsSeen(user_id, false)
@@ -99,14 +106,11 @@ class Swiper extends Component {
     })
   }
 
-  resetUsers() {
-    // Build API call to reset all users.
-  }
-
   render() {
     return(
       <div className='swiper'>
         <NavBar/>
+        <button onClick={this.resetUsers}>Reset Users</button>
         {this.renderUsers()}
       </div>
     )
@@ -121,7 +125,10 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchAllUsers, toggleMatch }, dispatch);
+  return bindActionCreators({
+    fetchAllUsers,
+    resetAllUsers,
+    toggleMatch }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Swiper);
