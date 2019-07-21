@@ -1,5 +1,6 @@
 .env*
+yarn.lock
+
 /tmp/*
 /tmp/cache/*
-/packs/*
-yarn.lock
+/public/packs/*
