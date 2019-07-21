@@ -91,7 +91,6 @@ class Swiper extends Component {
       <div className='swiper'>
         <NavBar/>
         {this.renderUsers()}
-        <Container/>
       </div>
     )
   }

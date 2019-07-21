@@ -22506,3 +22506,41 @@ puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
 puma (3.12.1) lib/puma/server.rb:474:in `process_client'
 puma (3.12.1) lib/puma/server.rb:334:in `block in run'
 puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/swiper" for 127.0.0.1 at 2019-07-21 12:04:00 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:2
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:3
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/pages/home.html.erb:4
+  Rendered pages/home.html.erb within layouts/application (9.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Completed 200 OK in 10222ms (Views: 10215.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/swiper" for 127.0.0.1 at 2019-07-21 12:04:41 -0400
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/pages/home.html.erb:2
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/pages/home.html.erb:3
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/pages/home.html.erb:4
+  Rendered pages/home.html.erb within layouts/application (10.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/richardjarram/code/catonmat/tea-fullstack/public/packs
+Completed 200 OK in 8637ms (Views: 8631.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/api/v1/frontend/fetch_all_users" for 127.0.0.1 at 2019-07-21 12:04:51 -0400
+Processing by Api::V1::FrontendController#fetch_all_users as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/frontend_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
